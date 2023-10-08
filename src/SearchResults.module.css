@@ -1,0 +1,29 @@
+.searchResults {
+    height: auto;
+    width: 48%;
+    background: linear-gradient(45deg, rgb(226, 169, 213), rgb(61, 4, 84));
+    margin: auto;
+}
+.musicList {
+    display:flex;
+    flex-direction: column;
+    border-top: 3px solid grey;
+    border-bottom: 3px solid grey;
+    height: 12vh;
+
+}
+.trackName{
+   
+    line-height: 0;
+}
+.trackArtist{
+    margin-top: 0;
+    line-height: 0;
+}
+.trackButton {
+  margin-left:  90%;
+}
+button {
+    background: transparent;
+    margin-left: 90%;
+}

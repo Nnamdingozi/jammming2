@@ -1,0 +1,10 @@
+.search {
+    width: 20%;
+    height: 7vh;
+    border-radius: 20px 20px;
+    border: 3px solid grey;
+    margin: auto;
+    background-color: rgb(235, 142, 208);
+    margin-bottom: 2vh;
+    text-align: center;
+}
