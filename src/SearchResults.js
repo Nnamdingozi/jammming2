@@ -2,7 +2,10 @@ import React from "react";
 import styles from "./SearchResults.module.css"
 
 function SearchResults(props){
- const track =   props.searchResults.map((track) => {<li key={track.id}>{track.name} {track.artist} {track.album}</li>})
+ const track =   props.searchResults.map((track) => {
+    return <li key={track.id}>{track.name} {track.artist} {track.album}</li>
+})
+
     return (
         <>
         <ul className={ styles.searchResults}>

@@ -23,10 +23,10 @@ function App() {
 
 
 function search(query){
-  if(query !== "")
-{const results = musicList.filter((track)=> track.toLowerCase().includes(query.toLowerCase()));
+  if(query !== "") {
+    const results = musicList.filter((track)=> track.name.toLowerCase().includes(query.toLowerCase()));
     
-    setSearchResults({results})
+    setSearchResults(results)
   }
 }
 
