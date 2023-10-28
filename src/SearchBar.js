@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import styles from './SearchBar.module.css'
 
-function SearchBar({ props}){
+function SearchBar(props){
     const [query, setQuery] = useState("")
 
     function handleOnChange (event){
@@ -18,7 +18,7 @@ function SearchBar({ props}){
         value = { query }
         />
         
-        <button onClick={ props.search }>Search</button>
+        <button onClick={() => props.onSearch(query)}>Search</button>
         
         </div>
     )
