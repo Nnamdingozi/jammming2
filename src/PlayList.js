@@ -1,12 +1,11 @@
 import React from "react";
-import styles from'./SearchBar.module.css';
+import styles from './PlayList.module.css'
 
-function SearchBar(props){
+function PlayList(props){
 return (
-    <div className={styles.search}>
-<p>{props.name}</p>
+    <div className={styles.playList}>
 
     </div>
 )
 };
-export default SearchBar;
+export default PlayList;

@@ -1,14 +1,26 @@
-import React from "react";
-import styles from'./SearchBar.module.css';
+import React, {useState, useEffect} from "react";
+import styles from './SearchBar.module.css'
 
-function SearchBar(props){
-return (
-    <button 
-    className={styles.search}
-    >
-{props.name}
+function SearchBar({ props}){
+    const [query, setQuery] = useState("")
 
-    </button>
-)
-};
-export default SearchBar;
+    function handleOnChange (event){
+        event.preventDefault();
+  setQuery(event.target.value)
+    }
+    
+   
+    return (
+        <div className={styles.banner}>
+        <input 
+        onChange = {handleOnChange}
+        type="text"
+        value = { query }
+        />
+        
+        <button onClick={ props.search }>Search</button>
+        
+        </div>
+    )
+}
+export default  SearchBar;
