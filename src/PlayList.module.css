@@ -1,6 +1,25 @@
 .playList {
-    height: 95%;
+    height: auto;
     width: 48%;
     background: linear-gradient(45deg, rgb(226, 169, 213), rgb(61, 4, 84));
-    margin: auto
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   padding-top: 5%;
+
+    justify-content: center;
+}
+.saveButton {
+
+    width: 60%;
+
+}
+input {
+    margin-top: 10%;
+    background: transparent;
+    text-align: center;
+    color: aliceblue;
+ 
+    
 }

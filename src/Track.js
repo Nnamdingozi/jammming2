@@ -1,13 +1,26 @@
 import React from "react";
+import Data from './mock-data';
+import { useState } from "react";
+import styles from './Track.module.css';
 
-function Track(props){
-props.musicList.map((track)=> {
-    (<div>
-        <h4>{track.name}</h4>
-        <p>{track.artist}</p>
-        <p>{track.album}</p>
-        <button>+</button>
-    </div>)
-})
+function Track({searchResults, addToPlayList}){
+
+
+
+return (
+<div>
+{
+        searchResults.map((data)=>(
+          <>
+          <div  className={styles.banner}>
+          <p> Song Name: {data.name}</p>
+            <p> Artist: {data.artist} <buttton className={styles.playListBtn} onClick={addToPlayList}>+</buttton></p>
+            <p> Album: {data.album}</p> 
+            </div>
+          </>
+        ))
+      }
+</div>
+)
 }
 export default Track

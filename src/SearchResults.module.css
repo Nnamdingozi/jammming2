@@ -1,29 +1,30 @@
 .searchResults {
-    height: 95%;
+    color: white;
+    height: auto;
     width: 48%;
     background: linear-gradient(45deg, rgb(226, 169, 213), rgb(61, 4, 84));
     margin: auto;
 }
-.musicList {
-    display:flex;
-    flex-direction: column;
-    border-top: 3px solid grey;
-    border-bottom: 3px solid grey;
-    height: 12vh;
 
-}
-.trackName{
-   
-    line-height: 0;
-}
-.trackArtist{
-    margin-top: 0;
-    line-height: 0;
-}
-.trackButton {
-  margin-left:  90%;
+h3 {
+  text-align: center;
+  
 }
 /* button {
     background: transparent;
     margin-left: 90%;
 } */
+ul{
+    width: 90%;
+    height: auto;
+    border: 2px solid grey;
+    position: relative;
+  }
+  li{
+    list-style-type: none;
+  }
+  .resultBtn{
+    position: absolute;
+    top: 30%;
+    left: 90%;
+  }

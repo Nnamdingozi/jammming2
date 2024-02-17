@@ -1,18 +1,20 @@
 import React from "react";
 import styles from "./SearchResults.module.css"
+import TrackList from "./TrackList";
 
 function SearchResults(props){
- const track =   props.searchResults.map((track) => {
-    return <li key={track.id}>{track.name} {track.artist} {track.album}</li>
-})
+
+
 
     return (
-        <>
-        <ul className={ styles.searchResults}>
-{track}
-        </ul>
-        <button>+</button>
-        </>
+        <div className = {styles.searchResults}>
+            <h2>Result</h2>
+             <TrackList
+              searchResults= {props.searchResults}
+              addToPlayList= {props.addToPlayList}
+               /> 
+        </div>
+       
     )
 
 }

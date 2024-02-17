@@ -11,7 +11,7 @@ button{
  .banner{
     width: 95%;
     margin: auto;
-    height: 30vh;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -21,4 +21,6 @@ button{
     height: 7vh;
     width: 60%;
     margin: auto;
+    color: black;
  }
+ 
